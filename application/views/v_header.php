@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Programming II | Merancang Template sederhana dengan CodeIgniter</title>
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?> assets/css/stylebuku.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/pustaka-booking/assets/css/stylebuku.css">
 </head>
 <body>
-    <div class="wrapper">
+    <div id="wrapper">
         <header>
             <hgroup>
                 <h1>Rentalbuku.net</h1>
@@ -20,4 +20,4 @@
                 </ul>
             </nav>
             <div class="clear"></div>
-        </header>
+        </header>  

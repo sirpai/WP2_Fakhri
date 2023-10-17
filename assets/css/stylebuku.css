@@ -16,6 +16,11 @@ body{
     padding: 20px;
 }
 
+#wrapper header hgroup{
+    float: left;
+    color: #fff;
+}
+
 #wrapper header nav{
      float: right;
      margin-top: 50px;
