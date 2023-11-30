@@ -1,6 +1,6 @@
 <?php
 
-class autentifikasi extends CI_Controllers
+class autentifikasi extends CI_Controller
 {
 
     public function index()
@@ -10,7 +10,7 @@ class autentifikasi extends CI_Controllers
             redirect('user');
         }
 
-        $this->form_validation->set_rules('email', 'Alamat Email', 'required|trim|valid_email'[
+        $this->form_validation->set_rules('email', 'Alamat Email', 'required|trim|valid_email', [
             'required' => 'Email Harus di isi!!',
             'valid_email' => "Email Tidak Benar!!"
         ]);
@@ -34,7 +34,7 @@ class autentifikasi extends CI_Controllers
 
         //jika usernya ada 
         if($user){
-            //jika usernya sudah aktif
+            //jika usernya sudah aktif  
             if($user['is_active'] == 1){
                 //cek password
                 if(password_verify($password, $user ['password'])) {$data = [

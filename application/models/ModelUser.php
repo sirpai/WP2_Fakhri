@@ -1,7 +1,7 @@
 <?php 
 defined ('BASEPATH') or exit ('No direct script access allowed');
 
-class ModelUser extend CI_Model
+class ModelUser extends CI_Model
 {
     public function simpanData($data = null)
     {
@@ -28,10 +28,6 @@ class ModelUser extend CI_Model
         $this->db->from('user');
         $this->db->limit(10, 0);
         return $this->db->get();
-    }
-    public function cekData($where = null)
-    {
-        return $this->db->get_where('user', $where);
     }
 }
 ?>
